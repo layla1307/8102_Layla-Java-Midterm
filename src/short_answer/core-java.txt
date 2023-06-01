@@ -76,118 +76,145 @@ Answer: its used for methods and attributes. it is mainly used for memory manage
 with variables, methods, blocks, and nested classes
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer: is used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override.
+it is useful when you want a variable to always store the same value. you use the final keyword in a method declaration
+to indicate that the method cant be overridden by subclasses
 
 Explain the difference between final, finally and finalize?
-Answer:
+Answer:final is an access modifier, finally is the block in exception handling and finalize is the method of object class
 
 What is a constructor?
-Answer:
+Answer: part of every class, its job is to construct new object of that class, it doesnt need to be declared.
+its job is to initialize the object of the class
 
 Can we have multiple constructors in a class?
-Answer:
+Answer:yes
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer: if you dont declare a constructor, a default constructor is provided for you.
 
 What is "this" keyword in Java? When would we use it?
-Answer:
+Answer: it refers to the current object in a method or constructor. it is used to eliminate the confusion between
+class attributes and parameters with the same name, it can be used to invoke current class method
 
 What is "super" keyword in Java? What are some scenarios we would use it?
-Answer:
+Answer: it refers to superclass (parent) objects. it is used to call superclass methods and to access the superclass constructor.
+it is used if parent class and child class have same fields
 
 What does JVM stand for?
-Answer:
+Answer: Java Virtual Machine
 
 Is JVM platform independent?
-Answer:
+Answer:no
 
 What version of Java are you using?
-Answer:
+Answer:17.0.7
 
 What does JAR stand for?
 Answer:
 
 What is the difference between JDK and JVM?
-Answer:
+Answer:Java Archive
 
 What is the difference between JVM and JRE?
-Answer:
+Answer:JRE (Java Runtime Environment) its an installation package that provides an environment to only run (not develop)
+the java program (or application) onto your machine.
+JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both.
+whatever java program you run using JDK or JRE goes into JVM & JVM is responsible for executing the java program line by line,
+hence it is also known as an interpreter
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer:compile time is the period when the programming code is converted to the machine code. runtime is the period of time
+when a program is running and generally occurs after compile time
 
 What is heap?
-Answer:
+Answer:its a type of memory which is inbuilt in JVM, used to store values and memory. heap is slower to access and read from,
+non-ordered structure, no limit on memory size
 
 How does Java manage its memory?
-Answer:
+Answer: heap and stack
 
 What is the difference between String, StringBuffer and StringBuilder?
-Answer:
+Answer: string is immutable whereas StringBuffer and StringBuilder are mutable classes. StringBuffer is thread-safe and synchronized
+whereas StringBuilder is not, thats why StringBuilder is faster than StringBuffer.
 
 What is Singleton class?
-Answer:
+Answer:it is a design pattern that ensures that a class can only have one object. its a class that allows only a single
+instance of itself to be created and gives access to that created instance
 
 What is Serialization and Deserialization?
-Answer:
+Answer: serialization is the process of converting the state of an object to a byte stream.
+deserialization is the reverse of serialization and converts the byte stream back to the original object
 
 Explain the difference between While and Do..While loops?
-Answer:
+Answer:while loops are executed while a condition is true. the condition is evaluated before each execution
+do..while loops are executed at least once the condition is evaluated after each execution/ iteration
 
 What is Enum?
-Answer:
+Answer: are constant values that are highly unlikely to change, but need to be referenced in your code
 
 What is Iterator?
-Answer:
+Answer:its an object used to cycle through arguments or elements present in a collection. its an object that contains a countable
+number of values
 
 Which one will take more memory: an int or Integer? Why?
-Answer:
+Answer: int is a primitive data type and takes 32 bits (4 bytes) to store and an integer is an object which takes 128 bits (16 bytes)
 
 Why are Strings considered to be immutable in Java?
-Answer:
+Answer: because strings with the same content share storage in a single pool to minimize creating a copy of the same value.
+that is to say, once a String is generated, its content cannot be changed.
 
 What is constructor chaining in Java?
-Answer:
+Answer: it is the process of calling a sequence of constructors. it is used when we want to invoke a number of constructors,
+one after another by using only an instance
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer: serial garbage collector uses a single thread for garbage collection process while the parallel garbage collector
+uses multiple threads for the garbage collection.
 
 What does JIT stands for?
-Answer:
+Answer: Just-In-Time
 
 Explain the process of Java garbage collection?
-Answer:
+Answer:when an object is no longer used, the garbage collector reclaims the underlying memory and reuses it for
+future object allocation. its the automated process of deleting code that is no longer needed or used
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer:no
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer:stack: a lot quicker to access & read from, ordered structure, local variables (primitive) & references to objects
+heap: slower to access and read from, non-ordered structure, no limit on memory size
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer: it allows an executing java program to examine or "introspect" upon itself and manipulate internal properties
+of the program. its useful because it allows us to inspect, modify and transform a java program without affecting existing code.
 
 What is multithreading in Java?
-Answer:
+Answer: its a programming concept in which the application can create a small unit of tasks to execute in parallel.
 
 What is synchronization in Java?
-Answer:
+Answer: is the capability to control the access of multiple threads to any shared resource. its the coordination
+of events to operate a system in unison
 
 What is a Framework?
-Answer:
+Answer:bodies of reusable pre-written code acting as templates that developers can use to create applications by filling in custome code as needed
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer: Selenium, Apache JMeter, JUnit, TestNG
 
 What are jUnit and testNG?
-Answer:
+Answer:JUnit: framework that is open source and may be used to write and trigger tests.
+TestNG: is a java-based framework that provides an improved way to run tests
 
 What are the dependencies for this project?
 Answer:
 
 What is dependency injection in Java?
-Answer:
+Answer:it enables you to turn regular Java classes into managed objects and to inject them into any other
+managed object. using dependency injection, your code can declare dependencies on any managed object
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer:static binding: works during compile time and performs better. it can be applied using function overloading
+or operator overloading.
+dynamic binding: works during run time and is more flexible. it can be accomplished using virtual functions
