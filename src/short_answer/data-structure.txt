@@ -1,70 +1,101 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer:it makes it easy for users to access & work with the data they need in appropriate ways. it frames the organization
+of information so that machines and humans can better understand it.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: insertion, searching, sorting, deletion
 
 When would we use data structures in the real world?
-Answer:
+Answer:to implement back functuality in the internet browser
 
 What is an Array?
-Answer:
+Answer: reference to an object, store data in a linear fashion (next to each other), fixed in size, can only hold one data
+type, once you declare & initialize an array you cant change the size
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: an array has both primitive data types as well as object data types. and they have a fixed number of values
+ArrayList has only object type data and can change in size
 
 What is a LinkedList?
-Answer:
+Answer:its a dynamic data structure whose size increases as you add the elements and decreases as you remove the elements from
+the list. the elements in the linked list are store in containers.
 
 How is an Array different from LinkedList?
-Answer:
+Answer:an array is a collection of elements of a similar data type. linkedlist is an ordered collection of elements of the
+same type in which each element is connected to the next using pointers. array elements can be accessed randomly using the array
+index, random accessing is not possible in linked lists.
 
 What is a Queue?
-Answer:
+Answer:it represents an ordered list of elements
 
 What is a Stack (referring to data structures)?
-Answer:
+Answer: it is a data structure that follows the principle of Last In First Out
 
 What is FIFO and LIFO?
-Answer:
+Answer:FIFO: First In First Out
+LIFO: Last In First Out
 
 Explain Big O Notation?
-Answer:
+Answer: its a tool used to describe the time complexity of algorithms. it calculates the time taken to run an algorithm as
+the input grows
 
 What is the best case to search an element from an array?
-Answer:
+Answer: is when the search item appears at the beginning of the list and is O(1)
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: is when the search item appears at the end of the list or not at all. this would require N comparisons, hense,
+the worse case is O(N)
 
 Describe what a tree data structure is?
-Answer:
+Answer: its a non-linear data structure where data objects are generally organized in terms of hierarchical relationship
 
 Describe what a graph data structure is?
-Answer:
+Answer: it mainly stores connected data. its made up of nodes or vertices and edges
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer:Hashmap is non-synchronized whereas HashTable is synchronized, which means HashTable is thread-safe
+and can be shared between multiple threads but HashMap cant be shared between multiple threads without proper synchronization
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: works on hashing algorithm and uses hashCode() and equals() method on key for get and put operations.
+they store elements in so-called buckets and the number of buckets is called capacity. they are useful because they
+allow arbitrary objects to be associated with other arbitrary objects
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: its one of the most common errors in Java. it occurs when a program attempts to access an invalid index in
+and array. for example, an index that is less than 0, or equal to or greater than the length of the array
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer:using variable assignment, create a new array of the same length and copy each element, use the clone method
+of the array, use System
 
 What is DFS and BFS?
-Answer:
+Answer:DFS: Depth First Search- uses a Stack to find the shortest path
+BFS: Breadth First Search- uses a Queue to find the shortest path
 
 What is Recursion?
-Answer:
+Answer: its the technique of making a function call itself. this technique provides a way to break complicated problems down
+into simple problems which are easier to solve
 
 What are linear and non-linear data Structures?
-Answer:
+Answer:linear: the data elements connect to each other sequentially, a user can transverse each element through a single run.
+non-linear: the data elements connect to each other hierarchically, thus, they are present at various levels
 
 Outline different sorting algorithms and their time complexities:
+                        Best          Average        Worst
+        Selection Sort	Ω(n^2)	      θ(n^2)	    O(n^2)
+        Bubble Sort  	Ω(n)	      θ(n^2)	    O(n^2)
+        Insertion Sort	Ω(n)	      θ(n^2)	    O(n^2)
+        Heap Sort	    Ω(n log(n))	  θ(n log(n))	O(n log(n))
+        Quick Sort	    Ω(n log(n))	  θ(n log(n))	O(n^2)
+        Merge Sort	    Ω(n log(n))	  θ(n log(n))	O(n log(n))
+        Bucket Sort	    Ω(n +k)	      θ(n +k)	     O(n^2)
+        Radix Sort	    Ω(nk)	      θ(nk)	        O(nk)
+        Count Sort	    Ω(n +k)	      θ(n +k)	    O(n +k)
+        Shell Sort	    Ω(n log(n))	  θ(n log(n))	O(n^2)
+        Tim Sort	    Ω(n)	      θ(n log(n))	O(n log (n))
+        Tree Sort	    Ω(n log(n))	  θ(n log(n))	O(n^2)
+        Cube Sort	    Ω(n)	      θ(n log(n))	O(n log(n))
 
