@@ -1,67 +1,79 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer: system of notation for writing computer programs, a type of written language that tells computers what to do.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer: JDK is Java Development Kit, its basically a software development environment for building java applications, it has a compiler, it has a bunch of codes we can reuse, it has a java runtime environment (JRE). it has development tools to provide an environment to develop your java program and JRE to execute your java program.
 
 What is an IDE?
-Answer:
+Answer: it stands for Integrated Development Environment, its a software application that helps programmers develop software code efficiently.
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer:IntelliJ IDEA, Eclipse, BlueJ, NetBeans
 
 Explain the entire java life cycle.
-Answer:
-
+Answer:IDE - code/text editor turns it into .java which is a source code- human readable then java compiler will compile this program which will translate .java to .class which is machine readable which contains bytecode file. but the computer isnt able to understand and execute this bytecode instruction. it can be made to understand through the JVM (Java Virtual Machine) which is basically used as an interpreter.it interprets bytecode into machine code to make it understandable. then it can be executed and display the results.
+you'll type a source code file, compile it using javac compliler, then run the compiled bytecode on a Java Virtual Machine
 What is a class?
-Answer:
+Answer: it is a blueprint, an indicator of what it will be about.
 
 What is an object?
-Answer:
+Answer: in the java programming language, an object is an instance of a Java class, meaning it is a copy of a specific class. Java objects have three primary characteristics: identity, state, and behavior.
 
 What is the entry point of a Java project?
-Answer:
+Answer: main method
 
 Why is the main() method static?
-Answer:
+Answer:this is so the compiler can call it without the creation of an object or before the creation of an object of the class
 
 Which class is the superclass of all classes?
-Answer:
+Answer: the class named Object is the super class of every class in Java
 
 What is difference between path and classpath variables?
-Answer:
+Answer: PATH is the environment variable where we specify the location of binaries. Classpath is the path for Java application where teh classes you compiled will be available.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer: an abstract class contains an abstract keyword on the declaration whereas an interface is a sketch that is used to implement a class
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer: no, we cant but we can create a refernce variable of an abstract class. the reference variable is used to refer to the objects of derived classes (subclasses of abstract class)
 
 What is Access Modifier?
-Answer:
+Answer:restrict the visibility of a class, method, or variable. public, private, protected, default
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer: OOP stands for Object- Oriented Programming, they are to improve code readablilty and reusibility by defining a Java program efficiently. they are the following:
+Abstraction: a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency.
+Encapsulation:one of the key features. refers to the bundling of fields & methods inside a single class. it helps us to keep related fields & methods together, which makes our code
+cleaner and easy to read.
+Inheritance: its a mechanism that allows a class to inherit properties and behaviors from another class. it promotes code reuse & establishes relationships between classes.
+Polymorphism:is an important concept, it simply means more than one form. that is, same entity (method or operator or object) can perform different operations in different scenerios.
+it has 2 types: method overriding (runtime) and method overloading (compile-time). Polymorphism allows us to create consistent code.
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer: a package in Java that is used to group related classes. java compiler imports java.lang package internally by default. it provides the fundamental classes
+that are necessary to design a basic Java program.
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer: it stands for Application Programming Interface- a software intermediary that allows two applications to talk to eachother
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer: no, this is to reduce the complexity and simplify the language
 
 What is method overloading? List all of the different ways to overload.
-Answer:
+Answer: creating methods with the same name if they differ in parameters.
+- the quantity/ number of parameters
+- the type of parameter
+- the order/ position of parameters
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer: Java exceptions are specialized events that indicate something bad has happened in the application, and the application
+either needs to recover or exit.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer: its used for methods and attributes. it is mainly used for memory management. it can be used
+with variables, methods, blocks, and nested classes
 
 What is final keyword? When and how do we use it?
 Answer:
