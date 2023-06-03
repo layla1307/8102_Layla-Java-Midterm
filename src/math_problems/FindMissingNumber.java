@@ -19,5 +19,7 @@ public class FindMissingNumber {
     public static void main(String[] args) {
         int[] array = new int[] {10, 2, 1, 4, 5, 3, 7, 8, 6};
 
+        System.out.println(findMissingNumbers(array));
+
     }
 }
