@@ -10,10 +10,24 @@ public class Palindrome {
      * Create a method to check if any given String is a palindrome or not.
      */
 
-    public static void main(String[] args) {
+    public static boolean isPalindrome(String str) {
+        String reverse = "";
+        boolean ans = false;
 
+        for (int i = str.length() - 1; i >= 0; i --) {
+            reverse = reverse + str.charAt(i);
+        }
+
+        if (str.equals(reverse)) {
+            ans = true;
+        }
+        return ans;
     }
-
-    // Implement here
+    public static void main(String[] args) {
+        String str "MOM";
+        str = str.toLowerCase();
+        boolean A = isPalindrome(str);
+        System.out.println(A);
+    }
 
 }
